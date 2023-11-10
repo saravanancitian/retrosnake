@@ -6,13 +6,13 @@ import (
 	"github.com/hajimehoshi/ebiten/v2/mobile"
 )
 
+////go run github.com/hajimehoshi/ebiten/v2/cmd/ebitenmobile  bind -target android -javapkg com.tictactoe.tictactoe -o ./bin/tictactoe.aar .\mobile
+
 type IGameCallback interface {
 	GameOverCallBack(winner int, duration int64)
 }
 
 var game *retrosnake.App
-
-////go run github.com/hajimehoshi/ebiten/v2/cmd/ebitenmobile  bind -target android -javapkg com.tictactoe.tictactoe -o ./bin/tictactoe.aar .\mobile
 
 func init() {
 	// yourgame.Game must implement ebiten.Game interface.
